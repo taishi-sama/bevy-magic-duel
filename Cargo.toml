@@ -1,0 +1,18 @@
+[package]
+name = "bevy-magic-duel"
+version = "0.1.0"
+edition = "2021"
+[[bin]]
+name = "client"
+[[bin]]
+name = "server"
+
+
+
+[dependencies]
+avian2d = { version = "0.2.0", features = ["serialize"] }
+bevy = "0.15.1"
+leafwing-input-manager = "0.16.0"
+lightyear = { version = "0.18.0", features = ["avian2d"] }
+serde = { version = "1.0.217", features = ["derive"] }
+tracing = "0.1.41"
