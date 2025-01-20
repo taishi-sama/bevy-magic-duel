@@ -8,4 +8,5 @@ pub mod player;
 pub mod server;
 pub mod client;
 pub mod states;
+pub mod shared;
 

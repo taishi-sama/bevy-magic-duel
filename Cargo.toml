@@ -13,6 +13,6 @@ name = "server"
 avian2d = { version = "0.2.0", features = ["serialize"] }
 bevy = "0.15.1"
 leafwing-input-manager = "0.16.0"
-lightyear = { version = "0.18.0", features = ["avian2d"] }
+lightyear = { version = "0.18.0", features = ["avian2d", "leafwing"] }
 serde = { version = "1.0.217", features = ["derive"] }
 tracing = "0.1.41"

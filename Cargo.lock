@@ -3006,6 +3006,7 @@ dependencies = [
  "futures",
  "getrandom",
  "governor",
+ "leafwing-input-manager",
  "lightyear_macros",
  "nonzero_ext",
  "parking_lot",

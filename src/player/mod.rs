@@ -5,9 +5,9 @@ use leafwing_input_manager::{prelude::{ActionState, InputMap}, InputManagerBundl
 use lightyear::prelude::*;
 use bevy::prelude::*;
 
-use crate::actions::Inputs;
+use crate::actions::{movements::Movement, Inputs};
 #[derive(Debug, Clone, Component)]
-#[require(Position, ActionState<Inputs>, InputMap<Inputs>, Collider, RigidBody, ColliderDensity, PrePredicted)]
+#[require(Position, ActionState<Movement>, InputMap<Movement>, Collider, RigidBody, ColliderDensity, PrePredicted)]
 pub struct Player;
-#[derive(Debug, Clone, Component)]
+#[derive(Debug, Clone, Component, Serialize, Deserialize, PartialEq, Eq)]
 pub struct PlayerId(pub ClientId); 
